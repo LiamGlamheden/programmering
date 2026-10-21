@@ -31,5 +31,16 @@ Test:
 
 ## Del 2: Feltabell
 medel värde = 71
+
+| Nr | Rad | Feltyp         | Hur hittade du felet? | Vad var fel?                 | Rättning               | Förebyggande           |
+| -- | --- | -------------- | --------------------- | ---------------------------- | ---------------------- | ---------------------- |
+| 1  | 22  | Syntaxfel      | Felmeddelande         | Citattecken saknades.        | Lade till `"`          | Kontrollera strängar.  |
+| 2  | 7   | Syntaxfel      | Felmeddelande         | Kolon saknades.              | Lade till `:`          | Kontrollera syntax.    |
+| 3  | 25  | Exekveringsfel | Felmeddelande         | Tal + text.                  | Lade till ','- `+`      | Kontrollera datatyper. |
+| 4  | 26  | Exekveringsfel | Felmeddelande         | Index 4 fanns inte.          | Ändrade till 3.        | Kontrollera index.     |
+| 5  | 13  | Logiskt fel    | Fel resultat          | Första värdet hoppades över. | Startade på 0.         | Kontrollera loopar.    |
+| 6  | 10  | Logiskt fel    | Fel resultat          | 80 räknades inte.            | Ändrade `>` till `>=`. | Testa gränsvärden.     |
+
+
 ## Del 3: Debuggern
 ## Del 4: Refaktorering
