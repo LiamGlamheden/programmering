@@ -4,7 +4,7 @@ disk = [45, 92, 80, 67]
 GRANS = 80
 
 
-def rakna_over_grans(varden, grans)
+def rakna_over_grans(varden, grans):
     antal = 0
     for varde in varden:
         if varde > grans:
