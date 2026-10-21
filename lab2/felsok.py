@@ -22,5 +22,5 @@ def medelvarde(varden):
 print("Rapport för", len(enheter), "enheter")
 print("Medel:", round(medelvarde(disk), 1))
 print("Minst 80 %:", rakna_over_grans(disk, GRANS))
-print("Största värde: " + max(disk))
+print("Största värde: ", + max(disk))
 print("Sista enheten:", enheter[4])
