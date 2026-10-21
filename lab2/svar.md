@@ -43,4 +43,19 @@ medel värde = 71
 
 
 ## Del 3: Debuggern
+
+Gissning:
+Jag tror utrskiften kommer att se ut så här:
+Misslyckade totalt: 3
+Timmar med larm: 1
+
+Misslyckade totalt: 0 "kanske 1"
+Timmar med larm: 0
+
+Misslyckade totalt: 5 
+Timmar med larm: 3
+
+Misslyckade totalt: 1
+Timmar med larm: 0
+
 ## Del 4: Refaktorering
