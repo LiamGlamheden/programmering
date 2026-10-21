@@ -58,4 +58,14 @@ Timmar med larm: 3
 Misslyckade totalt: 1
 Timmar med larm: 0
 
+Sen slutar programmet tror jag.
+
+| När programmet pausar | antal | misslyckade | timmar_med_larm |
+| --------------------- | ----- | ----------- | --------------- |
+| Rad 5, varv 1         | 3     | 0           | 0               |
+| Rad 5, varv 2         | 0     | 3           | 1               |
+| Rad 5, varv 3         | 5     | 3           | 1               |
+| Rad 5, varv 4         | 1     | 8           | 2               |
+| Rad 8, efter loopen   | 1     | 9           | 2               |
+
 ## Del 4: Refaktorering
