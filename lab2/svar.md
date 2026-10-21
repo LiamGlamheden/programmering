@@ -30,5 +30,6 @@ Test:
 | -3       | Ogiltigt värde          | Ogiltigt värde          | Ja  |
 
 ## Del 2: Feltabell
+medel värde = 71
 ## Del 3: Debuggern
 ## Del 4: Refaktorering
