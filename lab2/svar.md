@@ -90,3 +90,7 @@ antal har värdet 1 när loopen är klar. Det beror på att 1 är det sista vär
 Debuggern gör att man kan följa programmet rad för rad och se hur variablernas värden ändras. Då kan man se var programmet börjar ge ett felaktigt resultat och lättare hitta det logiska felet.
 
 ## Del 4: Refaktorering
+
+tot 1055
+snitt 211.0
+hog 2
