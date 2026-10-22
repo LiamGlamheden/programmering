@@ -34,13 +34,7 @@ def antal_minst(lista, grans):
     return antal
 
 
-
-
-
-
 print(summa_forsok(misslyckade_forsok))
 print(medel_forsok(misslyckade_forsok))
 print(storsta(misslyckade_forsok))
 print(antal_minst(misslyckade_forsok, 5))
-
-
