@@ -29,6 +29,16 @@ Test:
 | 500      | Ingen användbar kontakt | Ingen användbar kontakt | Ja  |
 | -3       | Ogiltigt värde          | Ogiltigt värde          | Ja  |
 
+
+nivå 2 
+
+Binärsökning: Gissa mitten av intervallet och halvera det efter varje gissning.
+
+
+Nivå 3
+
+Detta kan vara bra att veta för att förstå om programmet är otydligt eller om någon försöker attackera systemet.
+
 ## Del 2: Feltabell
 medel värde = 71
 
