@@ -68,4 +68,25 @@ Sen slutar programmet tror jag.
 | Rad 5, varv 4         | 1     | 8           | 2               |
 | Rad 8, efter loopen   | 1     | 9           | 2               |
 
+1. Stämde din gissning? Om inte, vad tänkte du fel?
+ Delvis. Några delar av mina gissningar stämde, men jag hade också fel på många. På den första trodde jag att det skulle bli ett misslyckande eftersom det var 3 stycken. Jag trodde också att programmet hade hoppat fram två gånger när vi startade vid rad 5.
+
+Jag hade också fel på den andra. Jag trodde att allt skulle bli noll. Det kan ha varit för att jag trodde att värdena från det tidigare varvet inte skulle följa med.
+
+På den tredje hade jag också fel. Jag trodde att programmet skulle fortsätta lägga till även efter 3 försök.
+
+Om jag ska sammanfatta vad jag tror har hänt, eftersom jag fortfarande är lite osäker, så är det förmodligen att datan inte följde med på det sättet jag förväntade mig.
+
+2. Varför ändras timmar_med_larm inte i varje varv?
+
+Det ändras bara när antal är 3 eller mer. Om antal är mindre än 3 körs inte if-satsen och då ändras inte värdet.
+
+3. Vilket värde har antal när loopen är klar? Förklara varför.
+
+antal har värdet 1 när loopen är klar. Det beror på att 1 är det sista värdet i listan inloggningar, och variabeln antal får det värdet i det sista varvet.
+
+4. Hur kan debuggern hjälpa dig att hitta ett logiskt fel, som felen i Del 2?
+
+Debuggern gör att man kan följa programmet rad för rad och se hur variablernas värden ändras. Då kan man se var programmet börjar ge ett felaktigt resultat och lättare hitta det logiska felet.
+
 ## Del 4: Refaktorering
