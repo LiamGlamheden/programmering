@@ -94,3 +94,18 @@ Debuggern gör att man kan följa programmet rad för rad och se hur variablerna
 tot 1055
 snitt 211.0
 hog 2
+
+Ändringar:
+Jag gjorde texten till utskriften tydligare. Så att de är lättare att läsa
+Gett bättre namn givning
+Lagt till en konstant för GRANS
+Lagt till två funktioner för att räkna summan och räknar långsamma svar.
+Lagt till kommentarer som föklarar varför jag lag till funktioner
+
+**2. Hur kontrollerade du att din nya version räknar ut exakt samma sak som den gamla?**
+
+Jag körde programmet och kontrollerade att resultatet blev samma som i den gamla versionen. Summan blev 1055, genomsnittet 211.0 och antalet svar över gränsen blev 2.
+
+**3. Varför är det viktigt med läsbar kod i ett driftteam, där flera personer använder och ändrar samma skript?**
+
+Läsbar kod gör det enklare för andra i teamet att förstå, felsöka och ändra skriptet. Det minskar risken för misstag och gör samarbetet lättare.
