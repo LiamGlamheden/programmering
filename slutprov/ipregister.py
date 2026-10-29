@@ -29,3 +29,13 @@ while True:
     break
 
 
+while True:
+    print("1. Lägg till enhet. 2. Visa alla enheter. 3. Avsluta")
+
+    try:
+        meny_val = int(input("Välj ett alternativ: "))
+
+        
+    except ValueError:
+        print("felaktigt värde skriv med siffror och välja mellan meny valen") 
+
