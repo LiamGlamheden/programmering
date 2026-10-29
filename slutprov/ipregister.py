@@ -7,11 +7,8 @@ while True:
         natet = input("")
         natet = ipaddress.ip_network(natet)
 
-        if "/" not in natet: 
-            raise ValueError
-
     except ValueError:
-        print("Fel! Skriv in ett giltigt nätverk.")
+        print("Fel! Skriv in ett giltigt nätverk. Och ha med /")
         continue
 
     print("Skriv in nätverkets IP: tex 192.168.10.25")
@@ -28,5 +25,7 @@ while True:
         print("IP-adressen tillhör nätverket!")
     else:
         print("IP-adressen tillhör inte nätverket!")
+
+    break
 
 
