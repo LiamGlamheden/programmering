@@ -1,6 +1,6 @@
 import ipaddress
 
-##Ett program som man kan spara enheter och rätt nät.
+## Ett program där man kan spara enheter och rätt nät.
 enheter = []
 
 while True:
@@ -16,63 +16,72 @@ while True:
 
     break
 
+
+## Skapar enheter och ser till att de tillhör rätt nät.
+def lagg_till_enhet():
+    print("Du har valt 1.")
+
+    try:
+        enhet_namn = input("Skriv namnet på enheten: ")
+
+        if not enhet_namn.strip():
+            raise ValueError
+
+        enhet_ip = input("Skriv IP till enheten: ")
+        enhet_ip = ipaddress.ip_address(enhet_ip)
+
+        if enhet_ip in natet:
+            print("IP-adressen tillhör nätverket! Enheten är tillagd.")
+            enheter.append([enhet_namn, enhet_ip])
+        else:
+            print("IP-adressen tillhör inte nätverket!")
+
+    except ValueError:
+        print("Felaktigt värde. Namnet får inte vara tomt och IP-adressen måste vara giltig.")
+
+
+## Visar alla enheter i listan.
+def visa_alla_enheter():
+    print("Du har valt 2.")
+
+    enhet_nummer = 1
+
+    for nuvarande_enhet in enheter:
+        print(enhet_nummer, nuvarande_enhet)
+        enhet_nummer = enhet_nummer + 1
+
+    if not enheter:
+        print("Det finns inga sparade enheter.")
+
+
+## Avslutar programmet.
+def avsluta_program():
+    print("Programmet är avslutat.")
+
+
 while True:
     print("1. Lägg till enhet. 2. Visa alla enheter. 3. Avsluta")
 
     try:
         meny_val = int(input("Välj ett alternativ: "))
 
-        if meny_val > 3 :
+        if meny_val > 3:
             print("För högt")
-            raise ValueError
+            continue
+
         elif meny_val < 1:
-            print("för lågt")
-            raise ValueError
+            print("För lågt")
+            continue
+
         elif meny_val == 1:
-            ##Skapar enheter och säger till att dem är i rätt nät
-            def lagg_till_enhet():
-                print("Du har valt 1.")
-
-                try:
-
-                    enhet_namn = input("Skriv namnet på enheten: ")
-
-                    if not enhet_namn.strip(): 
-                        raise ValueError
-
-                    enhet_ip = input("Skriv ip till enheten: ")
-
-                    enhet_ip = ipaddress.ip_address(enhet_ip)
-
-                    if enhet_ip in natet:
-                        print("IP-adressen tillhör nätverket! och enheten är tillagd.")
-                        enheter.append([enhet_namn, enhet_ip])
-                    else:
-                        print("IP-adressen tillhör inte nätverket!")
-
-
-                except ValueError:
-                    print("Felaktigt värde. Namnet får inte vara tomt Ip adressen ska vara en giltigt ip i nätet")
-
-           
+            lagg_till_enhet()
 
         elif meny_val == 2:
-            ##Visar alla enheter i listan 
-            def visa_alla_enheter():
+            visa_alla_enheter()
 
-                print("Du har valt 2.")
-                enhet_nummer = 0
-                for nuvarande_enhet in enheter:
-                    print(enhet_nummer)
-                    print(nuvarande_enhet)
-                    enhet_nummer = enhet_nummer + 1
         elif meny_val == 3:
-            ##Avslutar programmet
-            def avsluta_program():
-                print("programmet är avslutat")
-                break
+            avsluta_program()
+            break
 
-        
     except ValueError:
-        print("felaktigt värde skriv med siffror och välja mellan meny valen 1 - 3") 
-
+        print("Felaktigt värde! Skriv en siffra och välj mellan menyvalen 1–3.")
