@@ -11,9 +11,7 @@ while True:
         print("Fel! Skriv in ett giltigt nätverk. Och ha med /")
         continue
 
-
     break
-
 
 while True:
     print("1. Lägg till enhet. 2. Visa alla enheter. 3. Avsluta")
@@ -39,11 +37,12 @@ while True:
 
                 enhet_ip = input("Skriv ip till enheten: ")
 
-                if ip in natet:
+                enhet_ip = ipaddress.ip_address(enhet_ip)
+
+                if enhet_ip in natet:
                     print("IP-adressen tillhör nätverket!")
                 else:
                     print("IP-adressen tillhör inte nätverket!")
-
 
 
             except ValueError:
