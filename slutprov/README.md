@@ -24,9 +24,25 @@ Slut
 
 
 ## Redogörelse
+Jag har valt att validera IP-adressen som användaren skriver in när enheten skapas. Jag kontrollerar också att IP-adressen faktiskt tillhör det angivna nätverket.
 
+Jag har också valt att använda flera try- och except-block för att fånga upp fel, till exempel om användaren skriver in en sträng där det ska vara ett heltal. Jag kontrollerar även att användaren väljer ett giltigt alternativ i menyn.
+
+Jag delade upp koden i olika delar för att kunna återanvända funktionerna.
+
+Jag delade upp koden så att man ska kunne återanvända funktionerna.
 ## AI - logg
+Jag använde ChatGPT lite grann, främst när jag arbetade med IP-modulen. I början var jag osäker på hur den fungerade och bad AI om hjälp när jag skrev fel. Jag skrev först koden själv och frågade sedan om hjälp när jag fastnade.
+
+För resten av programmet, framför allt menyn, arbetade jag mest själv. Jag ställde några enstaka frågor till AI när jag hade problem med listan. Jag försökte främst att själv ta reda på hur man kunde lösa problemen och kollade även upp information på W3Schools. AI var till hjälp när jag fastnade med IP-modulen.
 
 ## Reflektion
+Reflektion 1
+
+Programmet fungerar genom att användaren först får ange nätverkets adress. När användaren sedan skapar en enhet får hen skriva in en IP-adress. Om IP-adressen stämmer överens med nätverket kan användaren spara enheten.
+
+Reflektion 2
+
+Jag tyckte att det var svårt i början att förstå hur valideringen fungerade och hur jag kunde kontrollera användarens inmatning. Jag fick därför söka information och försöka förstå hur det fungerade. Efter ett tag förstod jag det bättre och kunde implementera det i min kod.
 
 ## Testtabel (för A)
