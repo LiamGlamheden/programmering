@@ -1,5 +1,6 @@
 import ipaddress
 
+##Ett program som man kan spara enheter och rätt nät.
 enheter = []
 
 while True:
@@ -28,41 +29,48 @@ while True:
             print("för lågt")
             raise ValueError
         elif meny_val == 1:
-            print("Du har valt 1.")
+            ##Skapar enheter och säger till att dem är i rätt nät
+            def lagg_till_enhet():
+                print("Du har valt 1.")
 
-            try:
+                try:
 
-                enhet_namn = input("Skriv namnet på enheten: ")
+                    enhet_namn = input("Skriv namnet på enheten: ")
 
-                if not enhet_namn.strip(): 
-                    raise ValueError
+                    if not enhet_namn.strip(): 
+                        raise ValueError
 
-                enhet_ip = input("Skriv ip till enheten: ")
+                    enhet_ip = input("Skriv ip till enheten: ")
 
-                enhet_ip = ipaddress.ip_address(enhet_ip)
+                    enhet_ip = ipaddress.ip_address(enhet_ip)
 
-                if enhet_ip in natet:
-                    print("IP-adressen tillhör nätverket! och enheten är tillagd.")
-                    enheter.append([enhet_namn, enhet_ip])
-                else:
-                    print("IP-adressen tillhör inte nätverket!")
+                    if enhet_ip in natet:
+                        print("IP-adressen tillhör nätverket! och enheten är tillagd.")
+                        enheter.append([enhet_namn, enhet_ip])
+                    else:
+                        print("IP-adressen tillhör inte nätverket!")
 
 
-            except ValueError:
-                print("Felaktigt värde. Namnet får inte vara tomt Ip adressen ska vara en giltigt ip i nätet")
+                except ValueError:
+                    print("Felaktigt värde. Namnet får inte vara tomt Ip adressen ska vara en giltigt ip i nätet")
 
            
 
-        elif meny_val == 2: 
-            print("Du har valt 2.")
-            enhet_nummer = 0
-            for nuvarande_enhet in enheter:
-                print(enhet_nummer)
-                print(nuvarande_enhet)
-                enhet_nummer = enhet_nummer + 1
+        elif meny_val == 2:
+            ##Visar alla enheter i listan 
+            def visa_alla_enheter():
+
+                print("Du har valt 2.")
+                enhet_nummer = 0
+                for nuvarande_enhet in enheter:
+                    print(enhet_nummer)
+                    print(nuvarande_enhet)
+                    enhet_nummer = enhet_nummer + 1
         elif meny_val == 3:
-            print("programmet är avslutat")
-            break
+            ##Avslutar programmet
+            def avsluta_program():
+                print("programmet är avslutat")
+                break
 
         
     except ValueError:
