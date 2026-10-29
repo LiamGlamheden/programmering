@@ -55,8 +55,11 @@ while True:
 
         elif meny_val == 2: 
             print("Du har valt 2.")
+            enhet_nummer = 0
             for nuvarande_enhet in enheter:
+                print(enhet_nummer)
                 print(nuvarande_enhet)
+                enhet_nummer = enhet_nummer + 1
         elif meny_val == 3:
             print("programmet är avslutat")
             break
