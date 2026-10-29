@@ -43,6 +43,19 @@ while True:
             raise ValueError
         elif meny_val == 1:
             print("Du har valt 1.")
+
+            try:
+
+                enhet = input("Skriv namnet på enheten: ")
+
+                if not enhet.strip(): 
+                    raise ValueError
+
+            except ValueError:
+                print("Felaktigt värde. Namnet får inte vara tomt Ip adressen ska vara en giltigt ip i nätet")
+
+           
+
         elif meny_val == 2: 
             print("Du har valt 2.")
         elif meny_val == 3:
