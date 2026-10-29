@@ -11,20 +11,6 @@ while True:
         print("Fel! Skriv in ett giltigt nätverk. Och ha med /")
         continue
 
-    print("Skriv in nätverkets IP: tex 192.168.10.25")
-
-    try:
-        ip = input("")
-        ip = ipaddress.ip_address(ip)
-
-    except ValueError:
-        print("Fel! Skriv in en giltig IP-adress.")
-        continue
-
-    if ip in natet:
-        print("IP-adressen tillhör nätverket!")
-    else:
-        print("IP-adressen tillhör inte nätverket!")
 
     break
 
@@ -46,10 +32,19 @@ while True:
 
             try:
 
-                enhet = input("Skriv namnet på enheten: ")
+                enhet_namn = input("Skriv namnet på enheten: ")
 
-                if not enhet.strip(): 
+                if not enhet_namn.strip(): 
                     raise ValueError
+
+                enhet_ip = input("Skriv ip till enheten: ")
+
+                if ip in natet:
+                    print("IP-adressen tillhör nätverket!")
+                else:
+                    print("IP-adressen tillhör inte nätverket!")
+
+
 
             except ValueError:
                 print("Felaktigt värde. Namnet får inte vara tomt Ip adressen ska vara en giltigt ip i nätet")
