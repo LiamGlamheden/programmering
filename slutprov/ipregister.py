@@ -35,7 +35,21 @@ while True:
     try:
         meny_val = int(input("Välj ett alternativ: "))
 
+        if meny_val > 3 :
+            print("För högt")
+            raise ValueError
+        elif meny_val < 1:
+            print("för lågt")
+            raise ValueError
+        elif meny_val == 1:
+            print("Du har valt 1.")
+        elif meny_val == 2: 
+            print("Du har valt 2.")
+        elif meny_val == 3:
+            print("programmet är avslutat")
+            break
+
         
     except ValueError:
-        print("felaktigt värde skriv med siffror och välja mellan meny valen") 
+        print("felaktigt värde skriv med siffror och välja mellan meny valen 1 - 3") 
 
