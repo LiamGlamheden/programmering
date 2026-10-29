@@ -1,5 +1,7 @@
 import ipaddress
 
+enheter = []
+
 while True:
     print("Skriv nätverkets nät: tex 192.168.10.0/24")
 
@@ -40,7 +42,8 @@ while True:
                 enhet_ip = ipaddress.ip_address(enhet_ip)
 
                 if enhet_ip in natet:
-                    print("IP-adressen tillhör nätverket!")
+                    print("IP-adressen tillhör nätverket! och enheten är tillagd.")
+                    enheter.append([enhet_namn, enhet_ip])
                 else:
                     print("IP-adressen tillhör inte nätverket!")
 
@@ -52,6 +55,8 @@ while True:
 
         elif meny_val == 2: 
             print("Du har valt 2.")
+            for nuvarande_enhet in enheter:
+                print(nuvarande_enhet)
         elif meny_val == 3:
             print("programmet är avslutat")
             break
