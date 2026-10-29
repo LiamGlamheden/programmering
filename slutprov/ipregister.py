@@ -65,7 +65,7 @@ while True:
     try:
         meny_val = int(input("Välj ett alternativ: "))
 
-        if meny_val > 3:
+        if meny_val > 4:
             print("För högt")
             continue
 
@@ -82,6 +82,8 @@ while True:
         elif meny_val == 3:
             avsluta_program()
             break
+        elif meny_val == 4: 
+            print(len(enheter))
 
     except ValueError:
         print("Felaktigt värde! Skriv en siffra och välj mellan menyvalen 1–3.")
