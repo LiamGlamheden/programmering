@@ -53,6 +53,7 @@ SÅ LÄNGE programmet körs:
 avslutad loop
 SLUT
 
+![Flödesschema](flodesschema.png).
 
 
 ## Del 4: Användartest
