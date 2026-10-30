@@ -11,18 +11,6 @@ MIN_LANGD = 15
 VANLIGA = ["123456", "password", "qwerty123",
            "sommar2026", "lösenord"]
 
-# Frågar tills användaren skriver ett heltal mellan minsta och storsta
-def las_heltal(fraga, minsta, storsta):
-    while True:
-        try:
-            tal = int(input(fraga))
-        except ValueError:
-            print("Fel: skriv ett heltal, till exempel", minsta)
-        else:
-            if minsta <= tal <= storsta:
-                return tal
-            print("Fel: talet måste vara", minsta, "till", storsta)
-
 
 def visa_meny():
     print()
