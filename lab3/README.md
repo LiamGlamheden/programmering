@@ -57,4 +57,45 @@ SLUT
 
 
 ## Del 4: Användartest
+
+Användare: Eddie
+
+Uppgift Klarade testaren det? (ja / delvis / nej)
+
+Vad hände, och vad sa testaren?
+
+1. kontrollera ett rätt lösenord
+
+   resultat: Kunde inte se antalet tecken han hade skrivit in och skrev för kort. Efter felmeddelandet löste han problemen. Han fick inte tillräckliga instruktioner eftersom användaren tryckte på 1 först och inte på 2 för att se policyn.
+
+2. kontrollera ett felaktigt lösenord
+
+   resultat: Lyckades, men behövde läsa lösenordspolicyn.
+
+Försök att krascha programmet
+
+```
+resultat: Användaren lyckades inte krascha programmet, även om han testade på många olika sätt, som att skriva ett jättelångt användarnamn och att skriva bokstäver i stället för siffror.
+```
+
+Testarens återkoppling
+
+Efter testet svarar testaren på tre frågor. Skriv ner svaren i README.md.
+
+1. Vad fungerade bra?
+
+Instruktionerna visade relevant information. Felmeddelandena var också till god hjälp då de gav feedback på vad jag behövde lägga till eller ändra.
+
+2. Var var du osäker, eller vilket felmeddelande var svårt att förstå?
+
+Det var lite svårt att förstå vilka regler man skulle följa innan man såg lösenordspolicyn. Så om man tryckte på 1 först var det lite oklart.
+
+3. Om du fick ändra en sak, vad skulle det vara?
+
+Jag hade gjort lösenordspolicyn mer tillgänglig.
+
+När du ger återkoppling: var konkret och vänlig. Skriv "jag visste inte om jag skulle skriva MB eller GB" i stället för "det var otydligt".
+
+
+
 ## Del 5: Förbättringar och reflektion
