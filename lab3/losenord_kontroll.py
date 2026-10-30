@@ -15,8 +15,8 @@ VANLIGA = ["123456", "password", "qwerty123",
 def visa_meny():
     print()
     print("Lösenord kontroll – huvudmeny")
-    print("1. Kontrollera lösenord")
-    print("2. Visa lösenord policy")
+    print("1. Visa lösenord policy - kolla först!")
+    print("2. Kontrollera lösenord")
     print("3. Avsluta")
 
 
@@ -91,9 +91,9 @@ while True:
     val = input("Välj 1, 2 eller 3: ").strip()
 
     if val == "1":
-        kontrollera_losenord()
-    elif val == "2":
         visa_losenord_policy()
+    elif val == "2":
+        kontrollera_losenord()
     elif val == "3":
         print("Avslutar. Hej då!")
         break

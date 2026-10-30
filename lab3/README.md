@@ -99,3 +99,12 @@ När du ger återkoppling: var konkret och vänlig. Skriv "jag visste inte om ja
 
 
 ## Del 5: Förbättringar och reflektion
+
+Vad testaren märkte
+Att de var svårt att skriva ett lösenord som följde policy innan dem såg det
+
+Vad jag ändrade
+Jag valde att istället visa lösenord policy som val 1 istället för val 2. det hade gjort de lite mer självklar för användare att kolla där först.
+
+Commit-meddelande
+uppdaterad if sats annam meny ordning
