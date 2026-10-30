@@ -89,9 +89,13 @@ def kontrollera_losenord():
             print("-", fel)
 
 
+# Menyval 2 – Visa lösenordspolicy
 def visa_losenord_policy():
-    print("Inte klart än.")
-
+    print("Lösenordspolicy")
+    print("1. Lösenordet måste vara minst", MIN_LANGD, "tecken.")
+    print("2. Lösenordet får inte vara vanligt eller läckt.")
+    print("3. Lösenordet får inte innehålla användarnamnet.")
+    print("4. Lösenordet behöver inte innehålla olika teckentyper.")
 
 # Huvudprogram
 while True:
