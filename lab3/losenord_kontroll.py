@@ -26,9 +26,9 @@ def las_heltal(fraga, minsta, storsta):
 
 def visa_meny():
     print()
-    print("[Programmets namn] – huvudmeny")
-    print("1. [Första valet]")
-    print("2. [Andra valet]")
+    print("Lösenord kontroll – huvudmeny")
+    print("1. Kontrollera lösenord")
+    print("2. Visa lösenord policy")
     print("3. Avsluta")
 
 
@@ -51,7 +51,7 @@ def kontrollera(losenord, anvandarnamn):
 
 
 # Menyval 1 – Kontrollera lösenord
-def val_ett():
+def kontrollera_losenord():
     anvandarnamn = input("Skriv ditt användarnamn: ").strip()
 
     losenord = getpass.getpass(
@@ -68,7 +68,7 @@ def val_ett():
             print("-", fel)
 
 
-def val_tva():
+def visa_losenord_policy():
     print("Inte klart än.")
 
 
@@ -78,9 +78,9 @@ while True:
     val = input("Välj 1, 2 eller 3: ").strip()
 
     if val == "1":
-        val_ett()
+        kontrollera_losenord()
     elif val == "2":
-        val_tva()
+        visa_losenord_policy()
     elif val == "3":
         print("Avslutar. Hej då!")
         break
