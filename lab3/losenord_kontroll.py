@@ -32,8 +32,6 @@ def visa_meny():
     print("3. Avsluta")
 
 
-
-
 # Kontrollerar om lösenordet följer policyn
 def kontrollera(losenord, anvandarnamn):
     problem = []
@@ -52,11 +50,34 @@ def kontrollera(losenord, anvandarnamn):
 
 # Menyval 1 – Kontrollera lösenord
 def kontrollera_losenord():
-    anvandarnamn = input("Skriv ditt användarnamn: ").strip()
 
-    losenord = getpass.getpass(
-        "Skriv ditt lösenord (syns inte): "
-    )
+    while True:
+        try:
+            anvandarnamn = input("Skriv ditt användarnamn: ").strip()
+
+            if not anvandarnamn:
+                raise ValueError
+
+        except ValueError:
+            print("Fel! Du måste skriva ett användarnamn.")
+            continue
+
+        break
+
+    while True:
+        try:
+            losenord = getpass.getpass(
+                "Skriv ditt lösenord (syns inte): "
+            )
+
+            if not losenord.strip():
+                raise ValueError
+
+        except ValueError:
+            print("Fel! Du måste skriva ett lösenord.")
+            continue
+
+        break
 
     problem = kontrollera(losenord, anvandarnamn)
 
