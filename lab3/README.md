@@ -108,3 +108,18 @@ Jag valde att istället visa lösenord policy som val 1 istället för val 2. de
 
 Commit-meddelande
 uppdaterad if sats annam meny ordning
+# Reflektion
+
+Svara kort, några meningar per fråga:
+
+**1. Vad var svårast i projektet, och hur löste du det?**
+
+Att hoppa in i startkoden och kombinera den med byggkoden. Det tog lite tid för mig att förstå den helt och att veta var jag skulle implementera byggdelen.
+
+**2. Vad lärde du dig av användartestet som du inte hade märkt själv?**
+
+Jag lärde mig att en användare kanske oftast strävar efter att gå till det första möjliga alternativet och att det kan vara viktigare att ge informationen till användaren först.
+
+**3. Vem kan drabbas? Finns det användare som ditt program fungerar sämre för, till exempel den som använder skärmläsare? Vad skulle du göra med mer tid?**
+
+Jag tror att äldre hade kunnat drabbas, eftersom de förmodligen hade behövt se policyn först innan de börjar skriva in lösenordet.
